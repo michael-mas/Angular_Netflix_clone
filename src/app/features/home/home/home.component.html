@@ -1,0 +1,149 @@
+<ion-content class="ion-no-padding">
+  <ion-grid class="ion-no-padding">
+    <div class="concord-img-gradient"></div>
+    <!-- first row section -->
+    <ion-row
+     [style.background-image]="'url(./assets/images/netflix-image-bg.jpeg)'"
+     class="firstSection ion-align-items-center ion-justify-content-center">
+      <ion-col size-xs="12" size-md="8">
+
+        <ion-text color="light">
+          <h1 class="ion-margin-top ion-padding-top">
+            Film, série TV et bien plus en illimité.
+          </h1>
+          <p class="large">
+            Ou que vous soyez. Annulez à tout moment.
+          </p>
+          <p>
+            Prêt à regarder NetFluex ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.
+          </p>
+        </ion-text>
+
+        <ion-item>
+          <ion-input placeholder="Adresse e-mail"></ion-input>
+          <ion-button size="large" routerLink="/movies" slot="end">Commencer
+            <ion-icon slot="end" size="small" name="chevron-foward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- second row section -->
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+        <ion-text color="light">
+          <h2>Regardez NetFluex sur votre TV.</h2>
+          <p>Regardez NetFluex sur votre smart TV, Playstation, Xbox, Chromecast, Apple TV et bien plus.</p>
+        </ion-text>
+      </ion-col >
+      <ion-col size-xs="12" size-md="6">
+        <div class="video-image-tv">
+          <ion-img width="30%" src="./assets/images/netflix-image-tv.png"></ion-img>
+          <video width="100%" autoplay playsinline muted loop>
+            <source src="./assets/images/netflix.mp4"
+                    type="video/mp4">
+            Désolé, votre navigateur ne supporte pas cette vidéo
+          </video>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- third row section -->
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+        <ion-img src="./assets/images/netflix-mobile.jpeg"></ion-img>
+        <ion-item lines="none" class="item-download">
+          <ion-thumbnail slot="start">
+            <ion-img src="./assets/images/netflix-boxshot.png"></ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h3 color="light">Un Truc Bizarre</h3>
+            <p>Téléchargement en cours...</p>
+          </ion-label>
+          <ion-img class="gif-download" slot="end" src="./assets/images/icon-download.gif"></ion-img>
+        </ion-item>
+      </ion-col>
+      <ion-col size-xs="12" size-md="6">
+        <ion-text color="light">
+          <h2>Téléchargez vos séries préférées pour les regarder hors connexion.</h2>
+          <p>Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder hors connexion.</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <!-- fourth row section -->
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+        <ion-text color="light">
+          <h2>Ou que vous soyez.</h2>
+          <p>Regardez des films et séries TV en accès illimité sur votre smart TV, Playstation, Xbox, Chromecast, Apple TV et bien plus.</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size-xs="12" size-md="6">
+        <div class="video-image-devices">
+          <ion-img src="./assets/images/netflix-image-devices.png"></ion-img>
+          <video width="100%" autoplay playsinline muted loop>
+            <source src="./assets/images/netflix.mp4"
+                    type="video/mp4">
+            Désolé, votre navigateur ne supporte pas cette vidéo
+          </video>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- fifth row section -->
+    <ion-row class="ion-align-items-center ion-padding">
+      <ion-col size-xs="12" size-md="6">
+        <ion-img src="./assets/images/netflix-image-children.png"></ion-img>
+      </ion-col>
+      <ion-col size-xs="12" size-md="6">
+        <ion-text color="light">
+          <h2>Créez des profils pour les enfants.</h2>
+          <p>Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <!-- footer section -->
+    <ion-row class="ion-align-items-center  ion-padding text-white footer" >
+      <ion-col size="12">
+        <p>Des questions ? Appelez le 0800-561-554</p>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>FAQ</li>
+          <li>Relations Investisseurs</li>
+          <li>Modes de lecture</li>
+          <li>Mentions légales</li>
+          <li>Seulement sur Netflix</li>
+        </ul>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Recrutement</li>
+          <li>Conditions d'utilisation</li>
+          <li>Nous contacter</li>
+        </ul>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Compte</li>
+          <li>Utiliser des cartes cadeaux</li>
+          <li>Confidentialité</li>
+          <li>Test de vitesse</li>
+        </ul>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <ul>
+          <li>Presse</li>
+          <li>Acheter des cartes cadeaux</li>
+          <li>Préférences de cookies</li>
+          <li>Informations légales</li>
+        </ul>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

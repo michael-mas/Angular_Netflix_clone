@@ -1,0 +1,130 @@
+:host
+{
+
+  background: var(--ion-color-secondary);
+
+  .firstSection {
+    min-height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .concord-img-gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 94.1vh;
+    background: rgba(0,0,0,.4);
+    background-image: -webkit-gradient(linear,left,bottom,left,top,rgba(0,0,0,.8),color-stop(60%,rgba(0,0,0,.8)));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%, rgba(0,0,0,.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%, rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%, rgba(0,0,0,.8) 100%);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%, rgba(0,0,0,.8) 100%);
+  }
+
+  h1, h2 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+
+  p.large {
+    font-size: 1.625rem;
+    max-width: 640px;
+    margin: 1rem auto;
+  }
+
+  p {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  ion-item {
+    --inner-padding-end: 0;
+    --highlight-height: 0!important;
+    --border-width: 0;
+    max-width:  640px;
+    margin: auto;
+
+      ion-input {
+        --highlight-height: 0;
+      }
+
+      ion-button {
+        --border-radius: 0;
+        --border-width:0;
+
+        border-left: 1px solid #333;
+        margin:0;
+        margin-right: -0.5px;
+        text-transform: capitalize;
+        font-size: 1.625rem;
+      }
+  }
+
+  ion-row {
+    border-bottom: 8px solid #222;
+  }
+
+  ion-row:last-child {
+   border-bottom: 0;
+  }
+
+  .video-image-tv {
+    position: relative;
+    display: block;
+
+    video{
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      max-width: 73%;
+      max-height: 54%;
+      top: 21%;
+      left: 13%;
+      z-index: -1;
+    }
+  }
+
+
+
+  .video-image-devices {
+    position: relative;
+    display: block;
+
+    video{
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      max-width: 63%;
+      max-height: 47%;
+      top: 10%;
+      left: 18%;
+      z-index: -1;
+    }
+  }
+
+  .gif-download {
+    margin-right: 0.5px;
+  }
+
+  .footer {
+    color: var(--ion-color-medium);
+    // border-top: 8px solid #222;
+    margin: 4rem auto 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    > ion row {
+      max-width: 880px;
+      margin: auto;
+      border: none;
+    }
+    p {font-size: 1rem;}
+    ul {margin: 0; padding: 0;}
+    li {font-size: 0.8rem; display: block; padding: .5rem 0}
+  }
+}

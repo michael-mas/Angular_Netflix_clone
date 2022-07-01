@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-grid>
+
+    <!-- hightlight -->
+    <ion-row
+    [style.background-image]="'url()'">
+      <ion-col size="12" size-md="4" class="ion-padding">
+        <ion-text>
+          <h1>Title</h1>
+          <p>Description</p>
+        </ion-text>
+        <ion-button>Aperçu</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- trending movies -->
+    <ion-row *ngIf="trendings">
+      <ion-col size="12">
+        <ion-text>
+          <h2>Trending</h2>
+        </ion-text>
+      </ion-col>
+      <ion-col size="12">
+        <div class="flexBox">
+          <div class="flexItem" *ngFor="let m of trendings">
+           <ion-img [src]="m.poster_path"></ion-img>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- discover movies -->
+    <ion-row *ngIf="discovers">
+      <ion-col size="12">
+        <ion-text>
+          <h2>Discover</h2>
+        </ion-text>
+      </ion-col>
+      <ion-col size="12">
+        <div class="flexBox">
+          <div class="flexItem" *ngFor="let m of discovers">
+           <ion-img [src]="m.poster_path"></ion-img>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+     <!-- genres movies - Xn -->
+     <ion-row *ngFor="let g of genres">
+       <ion-col size="12">
+        <ion-text>
+          <h2>{{g.name}}</h2>
+        </ion-text>
+       </ion-col>
+       <ion-col size="12">
+         <div class="flexBox">
+           <div class="flexItem" *ngFor="let m of g.result">
+            <ion-img [src]="m.poster_path"></ion-img>
+           </div>
+         </div>
+       </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
