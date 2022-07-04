@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiKey: '22fef2c7552db329a8954a7cb5f03ada',
+  apiKey: 'Go register !',
   movieApiUrl: 'https://api.themoviedb.org/3',
   movieImgUrl: 'https://image.tmdb.org/t/p/original'
 };
